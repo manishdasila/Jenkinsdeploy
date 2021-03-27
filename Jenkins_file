@@ -1,0 +1,21 @@
+pipleline {
+      agent any
+      stages {
+          stage('Build')  {
+              Steps {  
+                       echo "build"  
+                     }                                           
+              }
+          stage('Test')  {
+              Steps {  
+                       echo "test"  
+                     }                   
+              }
+          stage('Deploy')  {
+              Steps {  
+                       echo "deploy"  
+                     }                   
+              }
+        }
+
+}
